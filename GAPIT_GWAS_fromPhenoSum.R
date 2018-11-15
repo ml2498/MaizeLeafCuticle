@@ -1,8 +1,8 @@
 ######### Combine GBS and RNA-seq after imputed seperately ######
-geno_G<-read.table("/workdir/ml2498/MaizeLeafCuticle/GBSdata_WiDiv_Swtcorn/Individual_Set/GBS_454_286K_CR06_AGPv3.hmp.txt",
-                     header=T,sep="\t",comment.char="")
-geno_R<-read.table("/workdir/ml2498/MaizeLeafCuticle/GBSdata_WiDiv_Swtcorn/Individual_Set/RNA_fastPHASE_451_419K_CR06_maf05_AGPv3.hmp.txt",
-                     header=T,sep="\t",comment.char="")
+#geno_G<-read.table("/workdir/ml2498/MaizeLeafCuticle/GBSdata_WiDiv_Swtcorn/Individual_Set/GBS_454_286K_CR06_AGPv3.hmp.txt",
+#                     header=T,sep="\t",comment.char="")
+#geno_R<-read.table("/workdir/ml2498/MaizeLeafCuticle/GBSdata_WiDiv_Swtcorn/Individual_Set/RNA_fastPHASE_451_419K_CR06_maf05_AGPv3.hmp.txt",
+#                     header=T,sep="\t",comment.char="")
 info_G<-geno_G[,1:11];geno_G<-geno_G[,-(1:11)]
 info_R<-geno_R[,1:11];geno_R<-geno_R[,-(1:11)]
 info<-rbind(info_G,info_R)
